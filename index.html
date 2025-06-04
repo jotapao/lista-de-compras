@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="#" class="voltar">
+                <i class="fas fa-arrow-left"></i> Voltar
+            </a>
+            <div class="logo">
+                <img src="https://via.placeholder.com/150x40?text=quicklist" alt="Quicklist Logo"> </div>
+        </header>
+
+        <main>
+            <h1>Compras da semana</h1>
+
+            <div class="adicionar-item-container">
+                <input type="text" placeholder="Adicione um novo item">
+                <button class="btn-adicionar">Adicionar item</button>
+            </div>
+
+            <ul class="lista-compras">
+                <li>
+                    <input type="checkbox" id="item1">
+                    <label for="item1">Pão de forma</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="item2">
+                    <label for="item2">Café preto</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="item3">
+                    <label for="item3">Suco de laranja</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="item4">
+                    <label for="item4">Bolacha</label>
+                </li>
+            </ul>
+        </main>
+
+        <div class="notificacao">
+            <i class="fas fa-info-circle"></i>
+            <span>O item foi removido da lista</span>
+            <button class="fechar-notificacao">&times;</button>
+        </div>
+    </div>
+</body>
+</html>
