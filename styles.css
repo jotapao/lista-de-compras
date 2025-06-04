@@ -70,6 +70,45 @@ main h1 {
     color: #555;
 }
 
+/* Adicione estas novas regras ao seu style.css */
+
+.lista-compras li {
+    /* ... estilos existentes ... */
+    position: relative; /* Necessário para posicionar o botão de remover */
+    padding-right: 35px; /* Espaço para o botão de remover */
+}
+
+.btn-remover-item {
+    background: none;
+    border: none;
+    color: #cc0000; /* Cor vermelha para remoção */
+    font-size: 1em; /* Tamanho do ícone/texto */
+    cursor: pointer;
+    padding: 0 5px;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.6;
+    transition: opacity 0.2s ease;
+}
+
+.btn-remover-item:hover {
+    opacity: 1;
+}
+
+.btn-remover-item i { /* Se estiver usando ícone da Font Awesome */
+    pointer-events: none; /* Para o evento de clique ir para o botão */
+}
+
+
+/* Modifique a regra da notificação para escondê-la inicialmente */
+.notificacao {
+    /* ... estilos existentes ... */
+    display: none; /* Esconder inicialmente */
+    /* ... restante dos estilos ... */
+}
+
 .adicionar-item-container input[type="text"]::placeholder {
     color: #aaa;
 }
